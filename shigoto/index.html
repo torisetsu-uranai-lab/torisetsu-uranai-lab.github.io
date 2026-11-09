@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>仕事トリセツ診断｜トリセツ占い研究所</title><meta name="description" content="10の質問に答えるだけ。あなたの仕事のタイプと取扱のコツがわかる、トリセツ占い研究所のオリジナル診断です。">
+<meta property="og:title" content="仕事トリセツ診断｜トリセツ占い研究所"><meta property="og:description" content="10の質問に答えるだけ。あなたの仕事のタイプと取扱のコツがわかる、トリセツ占い研究所のオリジナル診断です。">
+<meta property="og:type" content="website"><meta property="og:url" content="https://torisetsu-uranai-lab.github.io/shigoto/">
+<meta property="og:image" content="https://torisetsu-uranai-lab.github.io/assets/ogp.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/ebe_17.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/style.css"></head>
+<body><div class="stars" id="stars"></div><main><div class="nav"><a href="../">← 研究所トップへ</a><a href="https://www.instagram.com/torisetsu_uranai_lab" target="_blank" rel="noopener">Instagram</a></div>
+ <section class="screen on" id="s-top"><div class="center">
+  <span class="pill">トリセツ占い研究所</span>
+  <h1>あなたの<span class="g">仕事</span>トリセツ診断</h1>
+  <p class="lead">10の質問に直感で答えるだけ。<br>あなたの「働き方のタイプ」と、<br>一緒に働く人に伝えたい取扱のコツがわかります。</p>
+  <img class="hero" src="../assets/img/duo.webp" alt="研究所の所長エベと、助手のノクス"></div>
+  <button class="btn gold" id="start">診断をはじめる</button>
+  <p class="note center">所要時間：約1分／名前やメールアドレスの入力はありません<br>※診断はエンタメとしてお楽しみください</p>
+ </section>
+ <section class="screen" id="s-q">
+  <div class="prog"><span class="qno" id="qno"></span><div class="bar"><b id="pbar"></b></div></div>
+  <div class="qcard"><div class="qt" id="qt"></div><div id="opts"></div></div>
+  <button class="back" id="back" hidden>← ひとつ前の質問にもどる</button>
+  <div class="nox"><img src="../assets/img/nox_note.webp" alt="助手ノクス"><p id="noxsay"></p></div>
+ </section>
+ <section class="screen" id="s-load"><div class="center" style="padding-top:80px">
+  <span class="pill">分析中…</span><p class="lead" style="margin-top:18px">所長が、あなたのトリセツを読みあげています</p>
+  <img class="hero" src="../assets/img/ebe_13.webp" alt="水晶玉をのぞく所長エベ" style="max-width:46%"></div>
+ </section>
+ <section class="screen" id="s-res">
+  <div class="center"><span class="pill">あなたのタイプは…</span></div>
+  <div class="res-head" style="margin-top:16px"><div class="badge" id="rk"></div><div><h2 id="rname"></h2><small id="rsub"></small></div></div>
+  <img class="resimg" id="rimg" alt="">
+  <p class="lead" id="rdesc" style="color:#fff;font-size:16px"></p>
+  <div class="box"><h3>こんな人</h3><ul id="rfeat"></ul></div>
+  <div class="box tips"><h3 id="rtipsh"></h3><ul id="rtips"></ul></div>
+  <div class="box tips"><h3>相性のいいタイプ</h3><ul id="rmatch"></ul></div>
+  <div class="say"><small id="rwho"></small><p id="rsay"></p></div>
+  <div class="box scores"><h3>あなたのタイプ配分</h3><div id="rscores"></div></div>
+  <div class="box share"><h3>結果をシェアする</h3>
+   <textarea id="sharetext" rows="5" readonly></textarea>
+   <button class="btn gold" id="copy" style="margin-top:10px;font-size:16px;padding:14px">結果の文章をコピー</button>
+   <p class="note" style="margin-top:8px">インスタのストーリーズにスクショを載せるときは、@torisetsu_uranai_lab をタグ付けしてもらえると、研究所がとてもよろこびます。</p></div>
+  <div class="box links"><h3>ほかにもあります</h3>
+ <a href="../">研究所のほかの診断を見る</a>
+ <a class="alt" href="../hitokoto/">生年月日でわかる「一言トリセツ」</a>
+ <a class="alt" href="../kantei/">あなた専用トリセツ鑑定書</a>
+ <a class="alt" href="https://www.instagram.com/torisetsu_uranai_lab" target="_blank" rel="noopener">インスタで研究所をフォローする</a>
+</div>
+  <button class="btn ghost" id="retry">もう一度診断する</button>
+  <p class="note center">※この診断はオリジナルのエンタメ診断です。医学的・心理学的な検査ではありません。</p>
+  <footer>トリセツ占い研究所<br>※占いや診断はエンタメとしてお楽しみください<br>※AIを活用して制作しています</footer>
+ </section>
+</main>
+<script>window.QUIZ={"title": "仕事トリセツ診断", "tipsTitle": "一緒に働く人へ：取扱のコツ", "Q": [["新しい仕事をまかされたら？", [["A", "まずは動いてみる"], ["B", "まわりに相談しながら進める"], ["C", "手順を調べてから始める"], ["D", "おもしろくするアイデアを考える"]]], ["会議でのあなたは？", [["A", "結論をまとめる"], ["B", "みんなの意見を聞く"], ["C", "データや根拠を出す"], ["D", "新しい案を出す"]]], ["いちばんやる気が出るのは？", [["A", "目標を達成したとき"], ["B", "「助かった」と言われたとき"], ["C", "仕事の質を高められたとき"], ["D", "新しいことに挑戦するとき"]]], ["苦手なのは？", [["A", "なかなか決まらない会議"], ["B", "ギスギスした空気"], ["C", "急な予定変更"], ["D", "同じことのくり返し"]]], ["締め切り前のあなたは？", [["A", "みんなを引っぱってラストスパート"], ["B", "遅れている人を手伝う"], ["C", "もう早めに終わらせている"], ["D", "ぎりぎりで集中力が爆発する"]]], ["理想の職場は？", [["A", "実力がきちんと評価される"], ["B", "チームワークがいい"], ["C", "集中できる環境がある"], ["D", "自由に働ける"]]], ["ほめられてうれしいのは？", [["A", "「頼りになる」"], ["B", "「気がきくね」"], ["C", "「正確で丁寧だね」"], ["D", "「発想がおもしろい」"]]], ["仕事で失敗したときは？", [["A", "すぐに次の手を考える"], ["B", "迷惑をかけた人に謝りにいく"], ["C", "原因を分析する"], ["D", "気持ちを切りかえて次へ"]]], ["休憩時間は？", [["A", "つい仕事の話もしてしまう"], ["B", "同僚とおしゃべり"], ["C", "ひとりで静かに過ごす"], ["D", "気になることを調べる"]]], ["仕事中のあなたを動物にたとえるなら？", [["A", "ライオン"], ["B", "ゴールデンレトリバー"], ["C", "ビーバー"], ["D", "ネコ"]]]], "T": {"A": {"name": "先頭に立つリーダータイプ", "sub": "通称：司令塔タイプ", "img": "ebe_15", "desc": "決断が早く、みんなを目標に向かって引っぱれる人。困ったときに頼られる存在です。", "feat": ["決断が早く、行動力がある", "目標に向かってチームをまとめる", "プレッシャーに強い"], "tips": ["結論から先に伝えると話が早い", "任せると力を発揮する", "成果をしっかり認めると、さらにがんばる"], "match": ["B 縁の下のサポータータイプ：チームのまとまりを支えてくれる", "C コツコツ職人タイプ：計画の穴をうめてくれる"], "who": "所長エベのひとこと", "say": "引っぱる力は本物よ。たまには、うしろも振り返りなさいね。"}, "B": {"name": "縁の下のサポータータイプ", "sub": "通称：潤滑油タイプ", "img": "nox_note", "desc": "まわりの状況に気づいて、さりげなく手を貸せる人。あなたがいるとチームがうまく回ります。", "feat": ["困っている人にすぐ気づく", "人と人をつなぐのが上手", "チームの雰囲気をよくできる"], "tips": ["「助かったよ」の一言が力になる", "頼まれごとを抱えすぎていないか気にかけて", "意見を聞くと、現場の大事な情報が出てくる"], "match": ["A リーダータイプ：進む方向を示してくれる", "D ひらめきアイデアタイプ：仕事を楽しくしてくれる"], "who": "助手ノクスのひとこと", "say": "あなたの気づかいに、チームはいつも助けられていますよ。"}, "C": {"name": "コツコツ職人タイプ", "sub": "通称：スペシャリストタイプ", "img": "ebe_13", "desc": "ひとつのことを丁寧に、正確にやりとげる人。積み重ねた知識と技術が、あなたの武器です。", "feat": ["丁寧で正確な仕事ができる", "計画を立てて着実に進める", "専門性を深めるのが得意"], "tips": ["急な変更は、早めに理由とセットで伝えて", "集中できる時間と環境を守ってあげて", "仕事の質の高さを具体的にほめて"], "match": ["A リーダータイプ：成果を形にしてくれる", "D ひらめきアイデアタイプ：新しい視点をくれる"], "who": "所長エベのひとこと", "say": "あんたのコツコツは、いつか大きな実になるわよ。"}, "D": {"name": "ひらめきアイデアタイプ", "sub": "通称：クリエイタータイプ", "img": "ebe_11", "desc": "新しい発想で、仕事に新しい風を吹かせる人。「こうしたらおもしろい」を形にできます。", "feat": ["新しいアイデアがどんどん浮かぶ", "変化や挑戦を楽しめる", "自由な環境で力を発揮する"], "tips": ["アイデアはまず否定せずに聞いて", "同じ作業が続くと飽きやすいので、変化をつけて", "細かい仕上げは、得意な人と組むとうまくいく"], "match": ["B サポータータイプ：アイデアを形にする手助けをしてくれる", "C コツコツ職人タイプ：仕上げの質を高めてくれる"], "who": "助手ノクスのひとこと", "say": "あなたのひらめきが、仕事をもっと楽しくしてくれます。"}}, "NOX": ["深く考えずに、ピンときたものを選んでくださいね。", "いい調子です。", "所長がのぞきこんでいます……。", "ここで折り返しです。", "あなたらしい答えで大丈夫ですよ。", "あと半分くらいです。", "もう少しです。", "正直な気持ちで選んでくださいね。", "いよいよラストスパートです。", "最後の質問です！"]};</script>
+<script src="../assets/quiz.js"></script></body></html>

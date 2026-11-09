@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人づきあいトリセツ診断｜トリセツ占い研究所</title><meta name="description" content="10の質問に答えるだけ。あなたの人づきあいのタイプと取扱のコツがわかる、トリセツ占い研究所のオリジナル診断です。">
+<meta property="og:title" content="人づきあいトリセツ診断｜トリセツ占い研究所"><meta property="og:description" content="10の質問に答えるだけ。あなたの人づきあいのタイプと取扱のコツがわかる、トリセツ占い研究所のオリジナル診断です。">
+<meta property="og:type" content="website"><meta property="og:url" content="https://torisetsu-uranai-lab.github.io/hitozukiai/">
+<meta property="og:image" content="https://torisetsu-uranai-lab.github.io/assets/ogp.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/ebe_17.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/style.css"></head>
+<body><div class="stars" id="stars"></div><main><div class="nav"><a href="../">← 研究所トップへ</a><a href="https://www.instagram.com/torisetsu_uranai_lab" target="_blank" rel="noopener">Instagram</a></div>
+ <section class="screen on" id="s-top"><div class="center">
+  <span class="pill">トリセツ占い研究所</span>
+  <h1>あなたの<span class="g">人づきあい</span>トリセツ診断</h1>
+  <p class="lead">10の質問に直感で答えるだけ。<br>あなたの「人づきあいのタイプ」と、<br>まわりの人に伝えたい取扱のコツがわかります。</p>
+  <img class="hero" src="../assets/img/duo.webp" alt="研究所の所長エベと、助手のノクス"></div>
+  <button class="btn gold" id="start">診断をはじめる</button>
+  <p class="note center">所要時間：約1分／名前やメールアドレスの入力はありません<br>※診断はエンタメとしてお楽しみください</p>
+ </section>
+ <section class="screen" id="s-q">
+  <div class="prog"><span class="qno" id="qno"></span><div class="bar"><b id="pbar"></b></div></div>
+  <div class="qcard"><div class="qt" id="qt"></div><div id="opts"></div></div>
+  <button class="back" id="back" hidden>← ひとつ前の質問にもどる</button>
+  <div class="nox"><img src="../assets/img/nox_note.webp" alt="助手ノクス"><p id="noxsay"></p></div>
+ </section>
+ <section class="screen" id="s-load"><div class="center" style="padding-top:80px">
+  <span class="pill">分析中…</span><p class="lead" style="margin-top:18px">所長が、あなたのトリセツを読みあげています</p>
+  <img class="hero" src="../assets/img/ebe_13.webp" alt="水晶玉をのぞく所長エベ" style="max-width:46%"></div>
+ </section>
+ <section class="screen" id="s-res">
+  <div class="center"><span class="pill">あなたのタイプは…</span></div>
+  <div class="res-head" style="margin-top:16px"><div class="badge" id="rk"></div><div><h2 id="rname"></h2><small id="rsub"></small></div></div>
+  <img class="resimg" id="rimg" alt="">
+  <p class="lead" id="rdesc" style="color:#fff;font-size:16px"></p>
+  <div class="box"><h3>こんな人</h3><ul id="rfeat"></ul></div>
+  <div class="box tips"><h3 id="rtipsh"></h3><ul id="rtips"></ul></div>
+  <div class="box tips"><h3>相性のいいタイプ</h3><ul id="rmatch"></ul></div>
+  <div class="say"><small id="rwho"></small><p id="rsay"></p></div>
+  <div class="box scores"><h3>あなたのタイプ配分</h3><div id="rscores"></div></div>
+  <div class="box share"><h3>結果をシェアする</h3>
+   <textarea id="sharetext" rows="5" readonly></textarea>
+   <button class="btn gold" id="copy" style="margin-top:10px;font-size:16px;padding:14px">結果の文章をコピー</button>
+   <p class="note" style="margin-top:8px">インスタのストーリーズにスクショを載せるときは、@torisetsu_uranai_lab をタグ付けしてもらえると、研究所がとてもよろこびます。</p></div>
+  <div class="box links"><h3>ほかにもあります</h3>
+ <a href="../">研究所のほかの診断を見る</a>
+ <a class="alt" href="../hitokoto/">生年月日でわかる「一言トリセツ」</a>
+ <a class="alt" href="../kantei/">あなた専用トリセツ鑑定書</a>
+ <a class="alt" href="https://www.instagram.com/torisetsu_uranai_lab" target="_blank" rel="noopener">インスタで研究所をフォローする</a>
+</div>
+  <button class="btn ghost" id="retry">もう一度診断する</button>
+  <p class="note center">※この診断はオリジナルのエンタメ診断です。医学的・心理学的な検査ではありません。</p>
+  <footer>トリセツ占い研究所<br>※占いや診断はエンタメとしてお楽しみください<br>※AIを活用して制作しています</footer>
+ </section>
+</main>
+<script>window.QUIZ={"title": "人づきあいトリセツ診断", "tipsTitle": "まわりの人へ：取扱のコツ", "Q": [["友だちとの約束が、急にキャンセルになった。あなたは？", [["A", "「えー！」と正直に言う"], ["B", "「大丈夫？」と相手を気づかう"], ["C", "ひとりの時間ができたと、ひそかに喜ぶ"], ["D", "別の友だちを誘って遊びに行く"]]], ["グループでお店を決めるとき、あなたは？", [["A", "「ここにしよう」と決める"], ["B", "みんなの希望を聞いてまとめる"], ["C", "口コミを調べて候補を出す"], ["D", "「どこでも楽しいよ！」と盛り上げる"]]], ["初対面の人が多い集まりでは？", [["A", "自分から話しかけにいく"], ["B", "ひとりでいる人が気になってしまう"], ["C", "まずはまわりの様子を見る"], ["D", "気づけばみんなと打ちとけている"]]], ["友だちが落ちこんでいたら？", [["A", "「こうしたらいいよ」とアドバイスする"], ["B", "とにかく最後まで話を聞く"], ["C", "何があったのか、いっしょに整理する"], ["D", "気分転換に連れ出す"]]], ["言われていちばんうれしい言葉は？", [["A", "「頼りになるね」"], ["B", "「やさしいね」"], ["C", "「よく気づくね」"], ["D", "「一緒にいると楽しい」"]]], ["理想の休日の過ごし方は？", [["A", "やりたいことを決めて、どんどん動く"], ["B", "家族や友だちのために時間を使う"], ["C", "本や映画で、ひとりの時間を楽しむ"], ["D", "予定をつめこんで、遊びまくる"]]], ["チームでのあなたの役割は？", [["A", "先頭に立って引っぱる"], ["B", "みんなをささえるサポート役"], ["C", "計画や分析の担当"], ["D", "雰囲気づくりの担当"]]], ["ケンカをしたあとは？", [["A", "言いたいことは言ったので、わりとすっきり"], ["B", "相手が気になって、自分から謝る"], ["C", "なぜケンカになったのかを考える"], ["D", "次に会ったら、何事もなかったように話す"]]], ["いちばん苦手な場面は？", [["A", "なかなか決まらない話し合い"], ["B", "だれかが責められている場面"], ["C", "急に話をふられること"], ["D", "しーんとした気まずい空気"]]], ["あなたを動物にたとえるなら？", [["A", "ライオン"], ["B", "ゴールデンレトリバー"], ["C", "ふくろう"], ["D", "イルカ"]]]], "T": {"A": {"name": "ずばっと本音タイプ", "sub": "通称：リーダータイプ", "img": "ebe_16", "desc": "思ったことをまっすぐ伝えられて、迷ったときにみんなを前に進められる人。裏表のなさが、いちばんの魅力です。", "feat": ["思ったことを正直に言える", "決断が早く、みんなを引っぱる", "裏表がないので信頼される"], "tips": ["遠回しより、はっきり伝えるほうが通じる", "言いすぎた日も、ひと晩たてばケロッとしている", "「さすが！」の一言がいちばんの元気のもと"], "match": ["B やさしいフォロータイプ：言葉の強さをやわらかく受けとめてくれる", "C じっくり観察タイプ：勢いに冷静さを足してくれる"], "who": "所長エベのひとこと", "say": "本音を言えるのは才能よ。でも、ひと呼吸おくのも忘れずにね！"}, "B": {"name": "やさしいフォロータイプ", "sub": "通称：癒しタイプ", "img": "nox_thumb", "desc": "人の気持ちの変化にすぐ気づいて、そっと手をさしのべられる人。あなたのそばにいると、みんな安心できます。", "feat": ["人の気持ちの変化にすぐ気づく", "困っている人を放っておけない", "聞き上手で、相談されやすい"], "tips": ["「ありがとう」をこまめに伝えると元気が出る", "がんばりすぎていたら「休んでいいよ」の一言を", "本音を言っても大丈夫な空気をつくってあげて"], "match": ["A ずばっと本音タイプ：迷ったときに背中を押してくれる", "D ムードメーカータイプ：いっしょにいると自然に笑顔になれる"], "who": "助手ノクスのひとこと", "say": "あなたのやさしさに、救われている人がいますよ。"}, "C": {"name": "じっくり観察タイプ", "sub": "通称：研究者タイプ", "img": "ebe_13", "desc": "まわりをよく見て、冷静に本質を見ぬける人。言葉は少なめでも、その一言に重みがあります。", "feat": ["まわりを見て冷静に判断できる", "ひとりの時間で元気になる", "本質を見ぬく力がある"], "tips": ["急かさず、考える時間をあげるとうまくいく", "意見を聞くと、鋭いアイデアが出てくる", "ひとりの時間は、ちゃんと尊重してあげて"], "match": ["A ずばっと本音タイプ：考えたことを形にする行動力をくれる", "D ムードメーカータイプ：新しい世界に連れ出してくれる"], "who": "所長エベのひとこと", "say": "あんたの「よく見てる力」、研究所にほしいくらいよ。"}, "D": {"name": "ムードメーカータイプ", "sub": "通称：太陽タイプ", "img": "ebe_20", "desc": "その場の空気をぱっと明るくして、だれとでも仲よくなれる人。あなたがいるだけで、場が楽しくなります。", "feat": ["その場の空気を明るくできる", "だれとでもすぐ仲よくなれる", "ノリのよさで場を笑顔にする"], "tips": ["リアクションを返すと、もっと楽しくなる", "じつは気をつかっているので、たまに労って", "しーんとした空気は苦手なので、話しかけてあげて"], "match": ["B やさしいフォロータイプ：本当の気持ちに気づいてくれる", "C じっくり観察タイプ：落ち着いて話せる相手になる"], "who": "助手ノクスのひとこと", "say": "あなたがいるだけで、場がぱっと明るくなるんです。"}}, "NOX": ["深く考えずに、ピンときたものを選んでくださいね。", "いい調子です。", "所長がのぞきこんでいます……。", "ここで折り返しです。", "あなたらしい答えで大丈夫ですよ。", "あと半分くらいです。", "もう少しです。", "正直な気持ちで選んでくださいね。", "いよいよラストスパートです。", "最後の質問です！"]};</script>
+<script src="../assets/quiz.js"></script></body></html>

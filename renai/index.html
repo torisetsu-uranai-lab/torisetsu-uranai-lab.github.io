@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>恋愛トリセツ診断｜トリセツ占い研究所</title><meta name="description" content="10の質問に答えるだけ。あなたの恋愛のタイプと取扱のコツがわかる、トリセツ占い研究所のオリジナル診断です。">
+<meta property="og:title" content="恋愛トリセツ診断｜トリセツ占い研究所"><meta property="og:description" content="10の質問に答えるだけ。あなたの恋愛のタイプと取扱のコツがわかる、トリセツ占い研究所のオリジナル診断です。">
+<meta property="og:type" content="website"><meta property="og:url" content="https://torisetsu-uranai-lab.github.io/renai/">
+<meta property="og:image" content="https://torisetsu-uranai-lab.github.io/assets/ogp.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/ebe_17.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/style.css"></head>
+<body><div class="stars" id="stars"></div><main><div class="nav"><a href="../">← 研究所トップへ</a><a href="https://www.instagram.com/torisetsu_uranai_lab" target="_blank" rel="noopener">Instagram</a></div>
+ <section class="screen on" id="s-top"><div class="center">
+  <span class="pill">トリセツ占い研究所</span>
+  <h1>あなたの<span class="g">恋愛</span>トリセツ診断</h1>
+  <p class="lead">10の質問に直感で答えるだけ。<br>あなたの「恋愛のタイプ」と、<br>パートナーに伝えたい取扱のコツがわかります。</p>
+  <img class="hero" src="../assets/img/duo.webp" alt="研究所の所長エベと、助手のノクス"></div>
+  <button class="btn gold" id="start">診断をはじめる</button>
+  <p class="note center">所要時間：約1分／名前やメールアドレスの入力はありません<br>※診断はエンタメとしてお楽しみください</p>
+ </section>
+ <section class="screen" id="s-q">
+  <div class="prog"><span class="qno" id="qno"></span><div class="bar"><b id="pbar"></b></div></div>
+  <div class="qcard"><div class="qt" id="qt"></div><div id="opts"></div></div>
+  <button class="back" id="back" hidden>← ひとつ前の質問にもどる</button>
+  <div class="nox"><img src="../assets/img/nox_note.webp" alt="助手ノクス"><p id="noxsay"></p></div>
+ </section>
+ <section class="screen" id="s-load"><div class="center" style="padding-top:80px">
+  <span class="pill">分析中…</span><p class="lead" style="margin-top:18px">所長が、あなたのトリセツを読みあげています</p>
+  <img class="hero" src="../assets/img/ebe_13.webp" alt="水晶玉をのぞく所長エベ" style="max-width:46%"></div>
+ </section>
+ <section class="screen" id="s-res">
+  <div class="center"><span class="pill">あなたのタイプは…</span></div>
+  <div class="res-head" style="margin-top:16px"><div class="badge" id="rk"></div><div><h2 id="rname"></h2><small id="rsub"></small></div></div>
+  <img class="resimg" id="rimg" alt="">
+  <p class="lead" id="rdesc" style="color:#fff;font-size:16px"></p>
+  <div class="box"><h3>こんな人</h3><ul id="rfeat"></ul></div>
+  <div class="box tips"><h3 id="rtipsh"></h3><ul id="rtips"></ul></div>
+  <div class="box tips"><h3>相性のいいタイプ</h3><ul id="rmatch"></ul></div>
+  <div class="say"><small id="rwho"></small><p id="rsay"></p></div>
+  <div class="box scores"><h3>あなたのタイプ配分</h3><div id="rscores"></div></div>
+  <div class="box share"><h3>結果をシェアする</h3>
+   <textarea id="sharetext" rows="5" readonly></textarea>
+   <button class="btn gold" id="copy" style="margin-top:10px;font-size:16px;padding:14px">結果の文章をコピー</button>
+   <p class="note" style="margin-top:8px">インスタのストーリーズにスクショを載せるときは、@torisetsu_uranai_lab をタグ付けしてもらえると、研究所がとてもよろこびます。</p></div>
+  <div class="box links"><h3>ほかにもあります</h3>
+ <a href="../">研究所のほかの診断を見る</a>
+ <a class="alt" href="../hitokoto/">生年月日でわかる「一言トリセツ」</a>
+ <a class="alt" href="../kantei/">あなた専用トリセツ鑑定書</a>
+ <a class="alt" href="https://www.instagram.com/torisetsu_uranai_lab" target="_blank" rel="noopener">インスタで研究所をフォローする</a>
+</div>
+  <button class="btn ghost" id="retry">もう一度診断する</button>
+  <p class="note center">※この診断はオリジナルのエンタメ診断です。医学的・心理学的な検査ではありません。</p>
+  <footer>トリセツ占い研究所<br>※占いや診断はエンタメとしてお楽しみください<br>※AIを活用して制作しています</footer>
+ </section>
+</main>
+<script>window.QUIZ={"title": "恋愛トリセツ診断", "tipsTitle": "パートナーへ：取扱のコツ", "Q": [["気になる人ができたら？", [["A", "自分から話しかけにいく"], ["B", "相手の好きなものをこっそり調べる"], ["C", "しばらく様子を見る"], ["D", "まずは友だちとして楽しく過ごす"]]], ["理想のデートは？", [["A", "思い出に残る特別なデート"], ["B", "相手の行きたい場所へ行く"], ["C", "落ち着いて話せるカフェ"], ["D", "その日の気分でふらっとお出かけ"]]], ["連絡の頻度は？", [["A", "毎日やりとりしたい"], ["B", "相手のペースに合わせる"], ["C", "用事があるときで十分"], ["D", "気が向いたときに"]]], ["好きな人に言われたいのは？", [["A", "「あなたしか見えない」"], ["B", "「いつもありがとう」"], ["C", "「あなたといると安心する」"], ["D", "「一緒にいると楽しい」"]]], ["恋人とケンカしたら？", [["A", "その場で気持ちをぶつける"], ["B", "自分から歩み寄る"], ["C", "冷静になってから話す"], ["D", "ひと晩たったら忘れている"]]], ["記念日は？", [["A", "盛大にお祝いしたい"], ["B", "相手が喜ぶプレゼントを考える"], ["C", "小さくても心のこもったお祝いを"], ["D", "あまり気にしない"]]], ["恋人とのことをSNSにのせる？", [["A", "たくさんのせたい"], ["B", "相手がよければのせる"], ["C", "あまりのせない"], ["D", "気が向いたら"]]], ["恋のはじまりは？", [["A", "ひとめぼれが多い"], ["B", "相手のやさしさにひかれる"], ["C", "時間をかけて好きになる"], ["D", "友だちから自然に"]]], ["恋愛でいちばん大事なのは？", [["A", "情熱"], ["B", "思いやり"], ["C", "信頼"], ["D", "自由"]]], ["恋をすると、あなたは？", [["A", "頭の中がその人でいっぱいになる"], ["B", "相手のために何かしたくなる"], ["C", "本当に好きなのか考えこむ"], ["D", "自分の時間も大事にしたい"]]]], "T": {"A": {"name": "まっすぐ一途タイプ", "sub": "通称：情熱タイプ", "img": "ebe_06", "desc": "好きになったら一直線。気持ちをストレートに伝えられる、愛情表現の達人です。", "feat": ["好きな気持ちをまっすぐ伝えられる", "恋をすると毎日がキラキラする", "相手を一途に大切にする"], "tips": ["気持ちは言葉にして返してあげて", "連絡がとだえると不安になりやすいので、ひとことでもOK", "記念日やサプライズを一緒に楽しんで"], "match": ["B 尽くし上手タイプ：まっすぐな愛を受けとめてくれる", "C じっくり慎重タイプ：勢いに安心感を足してくれる"], "who": "所長エベのひとこと", "say": "好きなら好きって言えるの、才能よ。でも、相手のペースも見てあげなさい！"}, "B": {"name": "尽くし上手タイプ", "sub": "通称：献身タイプ", "img": "nox_wave", "desc": "相手の喜ぶ顔がいちばんのしあわせ。さりげない気づかいで、相手を支えられる人です。", "feat": ["相手の好みや変化にすぐ気づく", "喜ばせることが大好き", "ケンカしても自分から歩み寄れる"], "tips": ["「ありがとう」をこまめに伝えて", "がんばりすぎていたら、甘やかしてあげて", "本音をがまんしていないか、ときどき聞いてあげて"], "match": ["A まっすぐ一途タイプ：たくさんの愛情で満たしてくれる", "D 自由気ままタイプ：肩の力を抜かせてくれる"], "who": "助手ノクスのひとこと", "say": "尽くす分だけ、あなたも大切にされていいんですよ。"}, "C": {"name": "じっくり慎重タイプ", "sub": "通称：見極めタイプ", "img": "ebe_12", "desc": "時間をかけて信頼を育てる、誠実な恋をする人。一度心をひらいた相手は、とても大切にします。", "feat": ["相手をよく見てから好きになる", "言葉より行動で愛情を示す", "長く続く関係を育てられる"], "tips": ["急かさず、ゆっくり距離を縮めて", "約束をきちんと守ると信頼が深まる", "気持ちは、聞かれると話しやすい"], "match": ["A まっすぐ一途タイプ：気持ちをまっすぐ届けてくれる", "B 尽くし上手タイプ：安心できる関係をつくれる"], "who": "所長エベのひとこと", "say": "慎重なのは悪いことじゃないわ。でも、たまには一歩ふみ出しなさい！"}, "D": {"name": "自由気ままタイプ", "sub": "通称：マイペースタイプ", "img": "ebe_17", "desc": "恋も自分らしさも大切にできる人。いっしょにいて楽しい、友だちのような関係が得意です。", "feat": ["いっしょにいると楽しい雰囲気をつくれる", "相手をしばらず、自分もしばられない", "自分の時間も大切にできる"], "tips": ["ひとりの時間を尊重してあげて", "楽しいお出かけに誘うと喜ぶ", "気持ちはときどき言葉で確かめて"], "match": ["B 尽くし上手タイプ：やさしく見守ってくれる", "C じっくり慎重タイプ：おたがいのペースを大切にできる"], "who": "助手ノクスのひとこと", "say": "自然体のあなたが、いちばん魅力的です。"}}, "NOX": ["深く考えずに、ピンときたものを選んでくださいね。", "いい調子です。", "所長がのぞきこんでいます……。", "ここで折り返しです。", "あなたらしい答えで大丈夫ですよ。", "あと半分くらいです。", "もう少しです。", "正直な気持ちで選んでくださいね。", "いよいよラストスパートです。", "最後の質問です！"]};</script>
+<script src="../assets/quiz.js"></script></body></html>
